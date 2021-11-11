@@ -1,11 +1,14 @@
 package multilistas;
 
+//import javafx.scene.Node;
+import javax.swing.JOptionPane;
+import org.w3c.dom.Node;
 
 /**
  *
  * @author jhonperez
  */
-public class ListaEnlazadaSimple {
+public class Listaenlazadasimple {
 
     private static Nodo raiz;
 
@@ -21,7 +24,6 @@ public class ListaEnlazadaSimple {
 
             }
             aux.sig = elemento;
-
         }
     }
 
@@ -45,22 +47,23 @@ public class ListaEnlazadaSimple {
 
             aux = aux.sig;
         }
-        System.out.println("El carnet del estudiante que mas paga es: " + mayormatricula.carnet);
+        JOptionPane.showMessageDialog(null,
+                "El estudiante que mas paga es:\n"
+                + "- Nombre: " + mayormatricula.nombre + "\n"
+                + "- Numero Carnet: " + mayormatricula.carnet
+        );
     }
 
     private void printTotal(Nodo aux) {
-        System.out.println("____________________________");
 
-        System.out.println("Nombre del Estudiante: " + aux.nombre);
-
-        System.out.println("Numero del carnet: " + aux.carnet);
-
-        System.out.println("Credito: " + aux.credito);
-
-        System.out.println("Descuento: " + aux.descuento);
-
-        System.out.println("Matricula que debe pagar: " + aux.vMatricula);
-
+        JOptionPane.showMessageDialog(null,
+                "Estudiante:"
+                + "\n-Nombre del Estudiante: " + aux.nombre
+                + "\n-Numero del carnet: " + aux.carnet
+                + "\n-Credito: " + aux.credito
+                + "\n-Descuento: " + aux.descuento
+                + "\n-Matricula que debe pagar: " + aux.vMatricula
+        );
     }
 
     public Node head = null;
@@ -73,9 +76,6 @@ public class ListaEnlazadaSimple {
 
         if (Nodo == null) {
             System.out.println("La lista esta vacia");
-        } else {
-
         }
     }
-
 }
