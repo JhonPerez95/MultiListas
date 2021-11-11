@@ -68,14 +68,4 @@ public class Listaenlazadasimple {
 
     public Node head = null;
     public Node tail = null;
-
-    public void maxNodo() {
-        Node Nodo = null;
-        Node current = Nodo;
-        int max;
-
-        if (Nodo == null) {
-            System.out.println("La lista esta vacia");
-        }
-    }
 }
