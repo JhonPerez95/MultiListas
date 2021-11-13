@@ -1,8 +1,8 @@
-package multilistas;
+package listaLigadas;
 
 import javax.swing.JOptionPane;
 
-public class MultiListas {
+public class ListaLigadas {
 
     /**
      * @param args the command line arguments

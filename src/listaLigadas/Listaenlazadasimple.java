@@ -1,4 +1,4 @@
-package multilistas;
+package listaLigadas;
 
 //import javafx.scene.Node;
 import javax.swing.JOptionPane;

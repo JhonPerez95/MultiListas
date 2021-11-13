@@ -1,4 +1,4 @@
-package multilistas;
+package listaLigadas;
 
 /**
  *
